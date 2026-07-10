@@ -1,25 +1,16 @@
 {
   "name": "programming-teaching-kit",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "Programming lessons, teaching materials, code examples, exercises, projects, and skill assessments.",
+  "author": "Kritsana Wipankhet",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@11.11.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
-  "keywords": [],
-  "author": "Kritsana Wipankhet",
-  "license": "ISC",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.3.0",
-      "onFail": "download"
-    }
-  },
-  "type": "module",
   "devDependencies": {
     "vitepress": "^1.6.4"
   }
