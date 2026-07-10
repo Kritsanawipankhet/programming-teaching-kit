@@ -1,4 +1,4 @@
 # Courses
 
 - [C Programming Fundamentals](/th/courses/c-fundamentals/)
-- [Python](/th/courses/python/)
+- [Python Programming Fundamentals](/th/courses/python-fundamentals/)
