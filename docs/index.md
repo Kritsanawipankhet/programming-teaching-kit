@@ -3,23 +3,28 @@
 layout: home
 
 hero:
-  name: "Programming Teaching Kit"
-  text: "Programming lessons, teaching materials, code examples, exercises, projects, and skill assessments for learners at different levels."
-  tagline: My great project tagline
+  name: Programming Teaching Kit
+  text: Learn programming through clear lessons and hands-on practice.
+  tagline: Built for students, self-learners, tutors, and instructors.
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Explore Courses
+      link: /courses/
+    # - theme: alt
+    #   text: API Examples
+    #   link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Structured Lessons
+    details: Learn programming concepts step by step, from fundamental topics to practical applications.
+  - title: Runnable Code Examples
+    details: Explore code examples that can be compiled, executed, modified, and tested independently.
+  - title: Skill Checks
+    details: Assess prior knowledge and identify the most suitable starting point before beginning a course.
+  - title: Practice Exercises
+    details: Strengthen programming and problem-solving skills through focused exercises and coding challenges.
+  - title: Hands-on Projects
+    details: Apply concepts from multiple lessons by building small, practical programming projects.
+  - title: Learning and Teaching Resources
+    details: Use the materials for self-study, guided learning, classroom instruction, or one-on-one teaching.
 ---
-
