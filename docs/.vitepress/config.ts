@@ -33,6 +33,18 @@ export default defineConfig({
               ],
             },
           ],
+          "/courses/pro-roblox-game-development/": [
+            {
+              text: "Professional Roblox Game Development",
+              items: [
+                { text: "Overview", link: "/courses/pro-roblox-game-development/" },
+                {
+                  text: "Lessons",
+                  link: "/courses/pro-roblox-game-development/lessons/",
+                },
+              ],
+            },
+          ],
           "/courses/python-fundamentals/": [
             {
               text: "Python Programming Fundamentals",
