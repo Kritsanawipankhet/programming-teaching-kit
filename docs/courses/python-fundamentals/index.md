@@ -1,9 +1,51 @@
+---
+title: Overview
+description: An overview of the Python Programming Fundamentals course.
+---
+
 # Python Programming Fundamentals
 
-## What is Python?
+## Course Description
 
-Python is a high-level, general-purpose programming language created by **Guido van Rossum** and first released in **1991**.
+**Python Programming Fundamentals** is a beginner-friendly course designed to teach the core concepts of Python programming through practical examples and hands-on exercises.
 
-It is designed to be simple, readable, and easy to learn, making it one of the best programming languages for beginners. Today, Python is widely used by students, educators, researchers, and professional software developers around the world.
+Throughout this course, you will learn how to write clean, readable, and maintainable Python code while building a strong foundation in programming. The topics covered in this course will prepare you for more advanced areas such as object-oriented programming, data structures and algorithms, web development, automation, data science, and artificial intelligence.
 
-Python can be used to build many different types of applications, from simple scripts to large-scale software systems.
+## Course Content
+
+Throughout this course, you will learn:
+
+### Programming Fundamentals
+
+Learn the core concepts required to write Python programs.
+
+- Python syntax
+- Variables and data types
+- Input and output
+- Operators
+- Conditional statements
+- Loops
+- Functions
+
+### Data Collections
+
+Learn how to organize and manage data efficiently.
+
+- Lists
+- Tuples
+- Sets
+- Dictionaries
+
+### Writing Better Programs
+
+Improve code organization and reliability.
+
+- Type casting
+- Exception handling
+- Modules
+- Built-in modules
+- Custom modules
+
+### Practical Programming
+
+Apply your knowledge by building small command-line applications and solving programming exercises.

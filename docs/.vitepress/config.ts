@@ -106,12 +106,20 @@ export default defineConfig({
                       link: "/courses/python-fundamentals/lessons/03-variables-and-data-types",
                     },
                     {
+                      text: "Input and Output",
+                      link: "/courses/python-fundamentals/lessons/04-input-and-output",
+                    },
+                    {
+                      text: "Operators",
+                      link: "/courses/python-fundamentals/lessons/05-operators",
+                    },
+                    {
                       text: "Conditionals",
-                      link: "/courses/python-fundamentals/lessons/04-conditionals",
+                      link: "/courses/python-fundamentals/lessons/06-conditionals",
                     },
                     {
                       text: "Loops",
-                      link: "/courses/python-fundamentals/lessons/05-loops",
+                      link: "/courses/python-fundamentals/lessons/07-loops",
                     },
                   ],
                 },
