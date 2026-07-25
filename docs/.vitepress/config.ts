@@ -53,6 +53,7 @@ export default defineConfig({
               text: "Python Programming Fundamentals",
               items: [
                 { text: "Overview", link: "/courses/python-fundamentals/" },
+                { text: "Pre-course Skill Check", link: "/courses/python-fundamentals/pre-course-assessment/" },
                 {
                   text: "Getting Started",
                   items: [
