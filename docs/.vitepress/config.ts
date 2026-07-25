@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/programming-teaching-kit/',
+  base: "/programming-teaching-kit/",
   title: "Programming Teaching Kit",
   description:
     "Programming lessons, teaching materials, code examples, exercises, projects, and skill assessments for learners at different levels.",
@@ -37,7 +37,10 @@ export default defineConfig({
             {
               text: "Professional Roblox Game Development",
               items: [
-                { text: "Overview", link: "/courses/pro-roblox-game-development/" },
+                {
+                  text: "Overview",
+                  link: "/courses/pro-roblox-game-development/",
+                },
                 {
                   text: "Lessons",
                   link: "/courses/pro-roblox-game-development/lessons/",
@@ -51,16 +54,64 @@ export default defineConfig({
               items: [
                 { text: "Overview", link: "/courses/python-fundamentals/" },
                 {
+                  text: "Getting Started",
+                  items: [
+                    {
+                      text: "Overview",
+                      link: "/courses/python-fundamentals/getting-started/",
+                    },
+                    {
+                      text: "Install Python",
+                      link: "/courses/python-fundamentals/getting-started/01-install-python",
+                    },
+                    {
+                      text: "Install VS Code",
+                      link: "/courses/python-fundamentals/getting-started/02-install-vscode",
+                    },
+                    {
+                      text: "Install Python Extension",
+                      link: "/courses/python-fundamentals/getting-started/03-install-python-extension",
+                    },
+                    {
+                      text: "Verify Installation",
+                      link: "/courses/python-fundamentals/getting-started/04-verify-installation",
+                    },
+                    {
+                      text: "Create Your First Project",
+                      link: "/courses/python-fundamentals/getting-started/05-create-first-project",
+                    },
+                    {
+                      text: "Run Your First Program",
+                      link: "/courses/python-fundamentals/getting-started/06-run-first-program",
+                    },
+                  ],
+                },
+                {
+                  text: "Roadmap",
+                  link: "/courses/python-fundamentals/roadmap/",
+                },
+                {
                   text: "Lessons",
-                  link: "/courses/python-fundamentals/lessons/01-introduction",
                   items: [
                     {
                       text: "Introduction",
                       link: "/courses/python-fundamentals/lessons/01-introduction",
                     },
                     {
+                      text: "Basic Syntax",
+                      link: "/courses/python-fundamentals/lessons/02-basic-syntax",
+                    },
+                    {
                       text: "Variables and Data Types",
-                      link: "/courses/python-fundamentals/lessons/02-variables",
+                      link: "/courses/python-fundamentals/lessons/03-variables-and-data-types",
+                    },
+                    {
+                      text: "Conditionals",
+                      link: "/courses/python-fundamentals/lessons/04-conditionals",
+                    },
+                    {
+                      text: "Loops",
+                      link: "/courses/python-fundamentals/lessons/05-loops",
                     },
                   ],
                 },
