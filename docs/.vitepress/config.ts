@@ -122,6 +122,10 @@ export default defineConfig({
                       text: "Loops",
                       link: "/courses/python-fundamentals/lessons/07-loops",
                     },
+                                        {
+                      text: "Exceptions",
+                      link: "/courses/python-fundamentals/lessons/08-exceptions",
+                    },
                   ],
                 },
               ],
