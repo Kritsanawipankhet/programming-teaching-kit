@@ -20,34 +20,34 @@ export default defineConfig({
           { text: "About", link: "/about" },
         ],
         sidebar: {
-          "/courses/c-fundamentals/": [
-            {
-              text: "C Programming Fundamentals",
-              items: [
-                { text: "Overview", link: "/courses/c-fundamentals/" },
-                {
-                  text: "Pre-course Skill Check",
-                  link: "/courses/c-fundamentals/pre-course-assessment/",
-                },
-                { text: "Lessons", link: "/courses/c-fundamentals/lessons/" },
-              ],
-            },
-          ],
-          "/courses/pro-roblox-game-development/": [
-            {
-              text: "Professional Roblox Game Development",
-              items: [
-                {
-                  text: "Overview",
-                  link: "/courses/pro-roblox-game-development/",
-                },
-                {
-                  text: "Lessons",
-                  link: "/courses/pro-roblox-game-development/lessons/",
-                },
-              ],
-            },
-          ],
+          // "/courses/c-fundamentals/": [
+          //   {
+          //     text: "C Programming Fundamentals",
+          //     items: [
+          //       { text: "Overview", link: "/courses/c-fundamentals/" },
+          //       {
+          //         text: "Pre-course Skill Check",
+          //         link: "/courses/c-fundamentals/pre-course-assessment/",
+          //       },
+          //       { text: "Lessons", link: "/courses/c-fundamentals/lessons/" },
+          //     ],
+          //   },
+          // ],
+          // "/courses/pro-roblox-game-development/": [
+          //   {
+          //     text: "Professional Roblox Game Development",
+          //     items: [
+          //       {
+          //         text: "Overview",
+          //         link: "/courses/pro-roblox-game-development/",
+          //       },
+          //       {
+          //         text: "Lessons",
+          //         link: "/courses/pro-roblox-game-development/lessons/",
+          //       },
+          //     ],
+          //   },
+          // ],
           "/courses/python-fundamentals/": [
             {
               text: "Python Programming Fundamentals",
@@ -122,10 +122,35 @@ export default defineConfig({
                       text: "Loops",
                       link: "/courses/python-fundamentals/lessons/07-loops",
                     },
-                                        {
+                    {
                       text: "Exceptions",
                       link: "/courses/python-fundamentals/lessons/08-exceptions",
                     },
+                    {
+                      text: "Functions & Built-Functions",
+                      link: "/courses/python-fundamentals/lessons/09-functions-and-builtin-functions"
+                    },
+                    {
+                      text: "Type Casting",
+                      link: "/courses/python-fundamentals/lessons/10-type-casting"
+                    },
+                    {
+                      text: "Lists",
+                      link: "/courses/python-fundamentals/lessons/11-lists"
+                    },
+                    {
+                      text: "Tuples",
+                      link: "/courses/python-fundamentals/lessons/12-tuples"
+                    },
+                    {
+                      text: "Sets",
+                      link: "/courses/python-fundamentals/lessons/13-sets"
+                    },
+                    {
+                      text: "Dictionaries",
+                      link: "/courses/python-fundamentals/lessons/14-dictionaries"
+                    },                    
+
                   ],
                 },
               ],
