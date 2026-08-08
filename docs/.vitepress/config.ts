@@ -1,8 +1,14 @@
 import { defineConfig } from "vitepress";
 
+declare const process: {
+  env: {
+    VERCEL?: string;
+  };
+};
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/programming-teaching-kit/",
+  base: process.env.VERCEL ? "/" : "/programming-teaching-kit/",
   title: "Programming Teaching Kit",
   description:
     "Programming lessons, teaching materials, code examples, exercises, projects, and skill assessments for learners at different levels.",
