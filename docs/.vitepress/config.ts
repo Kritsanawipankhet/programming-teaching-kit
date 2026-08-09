@@ -162,6 +162,14 @@ export default defineConfig({
               ],
             },
           ],
+          "/courses/computer-and-operating-system-fundamentals/": [
+            {
+              text: "Computer and Operating System Fundamentals",
+              items: [
+                { text: "Overview", link: "/courses/computer-and-operating-system-fundamentals/" },
+              ],
+            },
+          ],
         },
         socialLinks: [
           {
