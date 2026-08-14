@@ -60,6 +60,7 @@ export default defineConfig({
               items: [
                 { text: "Overview", link: "/courses/python-fundamentals/" },
                 { text: "Pre-course Skill Check", link: "/courses/python-fundamentals/pre-course-assessment/" },
+                { text: "Post-course Practice Problems", link: "/courses/python-fundamentals/post-course-assessment/" },
                 {
                   text: "Getting Started",
                   items: [
@@ -162,14 +163,51 @@ export default defineConfig({
               ],
             },
           ],
-          "/courses/computer-and-operating-system-fundamentals/": [
+          "/courses/python-oop/": [
             {
-              text: "Computer and Operating System Fundamentals",
+              text: "Python Object-Oriented Programming",
               items: [
-                { text: "Overview", link: "/courses/computer-and-operating-system-fundamentals/" },
-              ],
-            },
+                { text: "Overview", link: "/courses/python-oop/" },
+                {
+                  text: "Lessons",
+                  items: [
+                    {
+                      text: "Classes and Objects",
+                      link: "/courses/python-oop/lessons/01-classes-and-objects",
+                    },
+                    {
+                      text: "Attributes, Methods, and Constructors",
+                      link: "/courses/python-oop/lessons/02-attributes-methods-and-constructors",
+                    },
+                    {
+                      text: "Encapsulation",
+                      link: "/courses/python-oop/lessons/03-encapsulation",
+                    },
+                    {
+                      text: "Inheritance",
+                      link: "/courses/python-oop/lessons/04-inheritance",
+                    },
+                    {
+                      text: "Polymorphism",
+                      link: "/courses/python-oop/lessons/05-polymorphism",
+                    },
+                    {
+                      text: "Composition",
+                      link: "/courses/python-oop/lessons/06-composition",
+                    },
+                  ],
+                },
+              ]
+            }
           ],
+          // "/courses/computer-and-operating-system-fundamentals/": [
+          //   {
+          //     text: "Computer and Operating System Fundamentals",
+          //     items: [
+          //       { text: "Overview", link: "/courses/computer-and-operating-system-fundamentals/" },
+          //     ],
+          //   },
+          // ],
         },
         socialLinks: [
           {
