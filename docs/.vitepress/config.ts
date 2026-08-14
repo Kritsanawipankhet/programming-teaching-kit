@@ -1,8 +1,14 @@
 import { defineConfig } from "vitepress";
 
+declare const process: {
+  env: {
+    VERCEL?: string;
+  };
+};
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/programming-teaching-kit/",
+  base: process.env.VERCEL ? "/" : "/programming-teaching-kit/",
   title: "Programming Teaching Kit",
   description:
     "Programming lessons, teaching materials, code examples, exercises, projects, and skill assessments for learners at different levels.",
@@ -20,40 +26,41 @@ export default defineConfig({
           { text: "About", link: "/about" },
         ],
         sidebar: {
-          "/courses/c-fundamentals/": [
-            {
-              text: "C Programming Fundamentals",
-              items: [
-                { text: "Overview", link: "/courses/c-fundamentals/" },
-                {
-                  text: "Pre-course Skill Check",
-                  link: "/courses/c-fundamentals/pre-course-assessment/",
-                },
-                { text: "Lessons", link: "/courses/c-fundamentals/lessons/" },
-              ],
-            },
-          ],
-          "/courses/pro-roblox-game-development/": [
-            {
-              text: "Professional Roblox Game Development",
-              items: [
-                {
-                  text: "Overview",
-                  link: "/courses/pro-roblox-game-development/",
-                },
-                {
-                  text: "Lessons",
-                  link: "/courses/pro-roblox-game-development/lessons/",
-                },
-              ],
-            },
-          ],
+          // "/courses/c-fundamentals/": [
+          //   {
+          //     text: "C Programming Fundamentals",
+          //     items: [
+          //       { text: "Overview", link: "/courses/c-fundamentals/" },
+          //       {
+          //         text: "Pre-course Skill Check",
+          //         link: "/courses/c-fundamentals/pre-course-assessment/",
+          //       },
+          //       { text: "Lessons", link: "/courses/c-fundamentals/lessons/" },
+          //     ],
+          //   },
+          // ],
+          // "/courses/pro-roblox-game-development/": [
+          //   {
+          //     text: "Professional Roblox Game Development",
+          //     items: [
+          //       {
+          //         text: "Overview",
+          //         link: "/courses/pro-roblox-game-development/",
+          //       },
+          //       {
+          //         text: "Lessons",
+          //         link: "/courses/pro-roblox-game-development/lessons/",
+          //       },
+          //     ],
+          //   },
+          // ],
           "/courses/python-fundamentals/": [
             {
               text: "Python Programming Fundamentals",
               items: [
                 { text: "Overview", link: "/courses/python-fundamentals/" },
                 { text: "Pre-course Skill Check", link: "/courses/python-fundamentals/pre-course-assessment/" },
+                { text: "Post-course Practice Problems", link: "/courses/python-fundamentals/post-course-assessment/" },
                 {
                   text: "Getting Started",
                   items: [
@@ -122,15 +129,85 @@ export default defineConfig({
                       text: "Loops",
                       link: "/courses/python-fundamentals/lessons/07-loops",
                     },
-                                        {
+                    {
                       text: "Exceptions",
                       link: "/courses/python-fundamentals/lessons/08-exceptions",
                     },
+                    {
+                      text: "Functions & Built-Functions",
+                      link: "/courses/python-fundamentals/lessons/09-functions-and-builtin-functions"
+                    },
+                    {
+                      text: "Type Casting",
+                      link: "/courses/python-fundamentals/lessons/10-type-casting"
+                    },
+                    {
+                      text: "Lists",
+                      link: "/courses/python-fundamentals/lessons/11-lists"
+                    },
+                    {
+                      text: "Tuples",
+                      link: "/courses/python-fundamentals/lessons/12-tuples"
+                    },
+                    {
+                      text: "Sets",
+                      link: "/courses/python-fundamentals/lessons/13-sets"
+                    },
+                    {
+                      text: "Dictionaries",
+                      link: "/courses/python-fundamentals/lessons/14-dictionaries"
+                    },                    
+
                   ],
                 },
               ],
             },
           ],
+          "/courses/python-oop/": [
+            {
+              text: "Python Object-Oriented Programming",
+              items: [
+                { text: "Overview", link: "/courses/python-oop/" },
+                {
+                  text: "Lessons",
+                  items: [
+                    {
+                      text: "Classes and Objects",
+                      link: "/courses/python-oop/lessons/01-classes-and-objects",
+                    },
+                    {
+                      text: "Attributes, Methods, and Constructors",
+                      link: "/courses/python-oop/lessons/02-attributes-methods-and-constructors",
+                    },
+                    {
+                      text: "Encapsulation",
+                      link: "/courses/python-oop/lessons/03-encapsulation",
+                    },
+                    {
+                      text: "Inheritance",
+                      link: "/courses/python-oop/lessons/04-inheritance",
+                    },
+                    {
+                      text: "Polymorphism",
+                      link: "/courses/python-oop/lessons/05-polymorphism",
+                    },
+                    {
+                      text: "Composition",
+                      link: "/courses/python-oop/lessons/06-composition",
+                    },
+                  ],
+                },
+              ]
+            }
+          ],
+          // "/courses/computer-and-operating-system-fundamentals/": [
+          //   {
+          //     text: "Computer and Operating System Fundamentals",
+          //     items: [
+          //       { text: "Overview", link: "/courses/computer-and-operating-system-fundamentals/" },
+          //     ],
+          //   },
+          // ],
         },
         socialLinks: [
           {

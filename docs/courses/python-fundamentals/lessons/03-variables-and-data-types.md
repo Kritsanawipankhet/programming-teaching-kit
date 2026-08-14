@@ -18,6 +18,7 @@ After completing this lesson, you will be able to:
 - Understand Python's basic data types.
 - Check the type of a value.
 - Follow Python naming conventions for variables.
+- Identify Python keywords that cannot be used as variable names.
 
 ## What is a Variable?
 
@@ -127,6 +128,47 @@ Invalid examples:
 2name = "Alice"
 student age = 18
 class = "Python"
+```
+
+## Python Keywords
+
+Python **keywords** are special words that already have a meaning in the language.
+
+You cannot use keywords as variable names because Python uses them for commands, conditions, loops, classes, functions, and other language features.
+
+For example, `class` is used to create a class, and `and` is used in Boolean expressions.
+
+| Keyword | Keyword | Keyword | Keyword | Keyword |
+|---------|---------|---------|---------|---------|
+| `False` | `None` | `True` | `and` | `as` |
+| `assert` | `async` | `await` | `break` | `class` |
+| `continue` | `def` | `del` | `elif` | `else` |
+| `except` | `finally` | `for` | `from` | `global` |
+| `if` | `import` | `in` | `is` | `lambda` |
+| `nonlocal` | `not` | `or` | `pass` | `raise` |
+| `return` | `try` | `while` | `with` | `yield` |
+
+These are sometimes called **hard keywords** because they are always reserved.
+
+Python also has **soft keywords**. They act like keywords only in specific situations, but they can still be used as variable names in other situations.
+
+| Type | Meaning | Examples | Can be used as a variable name? |
+|------|---------|----------|---------------------------------|
+| Hard keyword | Always reserved by Python | `if`, `for`, `class`, `return` | No |
+| Soft keyword | Reserved only in specific contexts | `match`, `case`, `type`, `_` | Sometimes, but avoid in beginner programs |
+
+Examples:
+
+```python
+and = True      # Invalid
+class = "Math"  # Invalid
+```
+
+Use another name instead:
+
+```python
+is_active = True
+course_class = "Math"
 ```
 
 ## Variable Naming Convention
@@ -256,6 +298,7 @@ In this lesson, you learned:
 - How to create variables.
 - How to update variables.
 - Python variable naming rules.
+- Python keywords that cannot be used as variable names.
 - The four basic Python data types.
 - How to check data types using `type()`.
 
