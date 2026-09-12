@@ -200,6 +200,27 @@ export default defineConfig({
               ]
             }
           ],
+          "/courses/python-advanced-trial/": [
+            {
+              text: "Python Advanced Trial Class",
+              items: [
+                { text: "Overview", link: "/courses/python-advanced-trial/" },
+                {
+                  text: "Lessons",
+                  items: [
+                    {
+                      text: "List Comprehension Demo",
+                      link: "/courses/python-advanced-trial/lessons/01-list-comprehension-demo",
+                    },
+                    {
+                      text: "Lambda, Map, and Filter Preview",
+                      link: "/courses/python-advanced-trial/lessons/02-lambda-map-filter-preview",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
           "/courses/python-data-structures-and-algorithms/": [
             {
               text: "Python Data Structures and Algorithms",
