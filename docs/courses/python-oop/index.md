@@ -41,6 +41,7 @@ Learn how to create classes that store data and behavior together.
 
 - Constructors with `__init__`
 - Instance attributes
+- Instance variables and class variables
 - Instance methods
 - Returning values from methods
 
@@ -49,7 +50,9 @@ Learn how to create classes that store data and behavior together.
 Learn techniques that make classes safer and more reusable.
 
 - Encapsulation
-- Private attributes by convention
+- Public attributes
+- Internal attributes by convention
+- Name mangling with double underscores
 - Getter and setter methods
 - Input validation
 

@@ -15,7 +15,9 @@ After completing this lesson, you will be able to:
 
 - Explain encapsulation.
 - Use methods to control object data.
-- Understand private attributes by convention.
+- Understand public attributes.
+- Understand internal attributes by convention.
+- Understand double underscore name mangling.
 - Create getter and setter methods.
 - Validate values before changing attributes.
 - Avoid common encapsulation mistakes.
@@ -49,11 +51,55 @@ A negative balance may not be allowed.
 
 Encapsulation helps us protect the data by changing it through methods.
 
-## Private Attributes by Convention
+## Access Modifiers in Python
+
+Some programming languages have access modifiers such as `public`, `private`, and `protected`.
+
+Python does not use access modifier keywords.
+
+Instead, Python uses naming conventions.
+
+| Style | Example | Meaning |
+| --- | --- | --- |
+| Public | `name` | Can be used from outside the class |
+| Internal by convention | `_balance` | Should be used only inside the class or related code |
+| Name mangling | `__pin` | Harder to access directly from outside the class |
+
+These rules are conventions that help programmers communicate intent.
+
+They do not make attributes fully private in the same way as languages like Java or C++.
+
+## Public Attributes
+
+A public attribute can be accessed directly from outside the class.
+
+```python
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+
+student = Student("Alice")
+
+print(student.name)
+student.name = "Alicia"
+print(student.name)
+```
+
+Output
+
+```text
+Alice
+Alicia
+```
+
+Public attributes are fine when direct access is simple and safe.
+
+## Internal Attributes by Convention
 
 Python uses a naming convention to show that an attribute should be treated as private.
 
-Private-style attributes start with one underscore.
+Internal-style attributes start with one underscore.
 
 ```python
 class BankAccount:
@@ -68,6 +114,44 @@ The underscore tells other programmers:
 This attribute is for internal use.
 Do not change it directly from outside the class.
 ```
+
+## Double Underscore Name Mangling
+
+Attributes that start with two underscores are name-mangled by Python.
+
+This means Python changes the attribute name internally to make accidental access harder.
+
+```python
+class BankAccount:
+    def __init__(self, pin):
+        self.__pin = pin
+
+    def check_pin(self, pin):
+        return pin == self.__pin
+
+
+account = BankAccount("1234")
+
+print(account.check_pin("1234"))
+```
+
+Output
+
+```text
+True
+```
+
+Trying to access `account.__pin` directly will not work as expected.
+
+```python
+print(account.__pin)
+```
+
+This causes an `AttributeError`.
+
+For beginner code, use one underscore most of the time.
+
+Use two underscores only when you need to avoid name conflicts, especially in inheritance.
 
 ## Controlling Changes with Methods
 
@@ -235,13 +319,30 @@ Not every attribute needs getter and setter methods.
 
 Use them when you need validation or controlled access.
 
+### Thinking underscores make data fully private
+
+This is a convention:
+
+```python
+account._balance
+```
+
+It tells programmers not to use the value directly.
+
+It does not completely block access.
+
+Double underscores make direct access harder, but they are still not a security feature.
+
 ## Summary
 
 In this lesson, you learned:
 
 - Encapsulation protects object data.
 - Methods can control how attributes change.
+- Python does not use access modifier keywords.
+- Public attributes can be accessed directly.
 - A single underscore means an attribute is internal by convention.
+- Double underscores trigger name mangling.
 - Getter methods return values.
 - Setter methods update values safely.
 - Validation helps prevent invalid object states.
@@ -282,3 +383,14 @@ Create a class called `Temperature`.
 Use `_celsius` as an internal attribute.
 
 Do not allow a value below `-273.15`.
+
+### Exercise 4
+
+Create a class called `UserAccount`.
+
+It should have:
+
+- A public attribute called `username`
+- An internal attribute called `_email`
+- A double underscore attribute called `__password`
+- A method called `check_password(password)` that returns `True` or `False`

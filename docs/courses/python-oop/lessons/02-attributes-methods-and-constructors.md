@@ -17,6 +17,7 @@ After completing this lesson, you will be able to:
 
 - Explain what `__init__` does.
 - Create instance attributes.
+- Explain the difference between instance variables and class variables.
 - Create objects with starting values.
 - Write methods that use object attributes.
 - Return values from methods.
@@ -83,6 +84,91 @@ Output
 Alice
 Bob
 ```
+
+## Instance Variables
+
+An **instance variable** belongs to one object.
+
+In Python, instance variables are usually created with `self`.
+
+```python
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+
+student1 = Student("Alice")
+student2 = Student("Bob")
+
+student1.name = "Alicia"
+
+print(student1.name)
+print(student2.name)
+```
+
+Output
+
+```text
+Alicia
+Bob
+```
+
+Changing `student1.name` does not change `student2.name`.
+
+Each object has its own `name`.
+
+## Class Variables
+
+A **class variable** belongs to the class itself.
+
+It is shared by all objects created from that class.
+
+```python
+class Student:
+    school_name = "Python School"
+
+    def __init__(self, name):
+        self.name = name
+
+
+student1 = Student("Alice")
+student2 = Student("Bob")
+
+print(student1.school_name)
+print(student2.school_name)
+```
+
+Output
+
+```text
+Python School
+Python School
+```
+
+Because `school_name` is shared, changing it on the class affects all objects that read it from the class.
+
+```python
+Student.school_name = "Code Academy"
+
+print(student1.school_name)
+print(student2.school_name)
+```
+
+Output
+
+```text
+Code Academy
+Code Academy
+```
+
+Use instance variables for data that is different for each object.
+
+Use class variables for data shared by every object of the same class.
+
+| Variable type | Where it is written | Who uses it | Example |
+| --- | --- | --- | --- |
+| Instance variable | Inside methods with `self` | One object | `self.name` |
+| Class variable | Directly inside the class | All objects | `school_name` |
 
 ## Methods That Use Attributes
 
@@ -243,12 +329,33 @@ student = Student("Alice")
 
 This causes a `TypeError` because `age` is missing.
 
+### Using a class variable for object-specific data
+
+Avoid this:
+
+```python
+class Student:
+    name = "Unknown"
+```
+
+Use an instance variable instead:
+
+```python
+class Student:
+    def __init__(self, name):
+        self.name = name
+```
+
+The student's name should be different for each object.
+
 ## Summary
 
 In this lesson, you learned:
 
 - `__init__` runs when an object is created.
 - Instance attributes store data for each object.
+- Instance variables belong to one object.
+- Class variables are shared by all objects of a class.
 - Methods can use and update attributes.
 - Methods can return values.
 - Objects can have different values from the same class.
@@ -288,3 +395,13 @@ It should have:
 - `deposit(amount)`
 - `withdraw(amount)`
 - `show_balance()`
+
+### Exercise 5
+
+Create a class called `Employee`.
+
+Each employee should have an instance variable called `name`.
+
+The class should have a class variable called `company_name`.
+
+Create two employee objects and print each employee's name and company name.

@@ -200,6 +200,66 @@ export default defineConfig({
               ]
             }
           ],
+          "/courses/python-data-structures-and-algorithms/": [
+            {
+              text: "Python Data Structures and Algorithms",
+              items: [
+                {
+                  text: "Overview",
+                  link: "/courses/python-data-structures-and-algorithms/",
+                },
+                {
+                  text: "Lessons",
+                  items: [
+                    {
+                      text: "Introduction to DSA",
+                      link: "/courses/python-data-structures-and-algorithms/lessons/01-introduction",
+                    },
+                    {
+                      text: "Big O Notation",
+                      link: "/courses/python-data-structures-and-algorithms/lessons/02-big-o-notation",
+                    },
+                    {
+                      text: "Arrays and Python Lists",
+                      link: "/courses/python-data-structures-and-algorithms/lessons/03-arrays-and-python-lists",
+                    },
+                    {
+                      text: "Stacks and Queues",
+                      link: "/courses/python-data-structures-and-algorithms/lessons/04-stacks-and-queues",
+                    },
+                    {
+                      text: "Hash Tables",
+                      link: "/courses/python-data-structures-and-algorithms/lessons/05-hash-tables",
+                    },
+                    {
+                      text: "Recursion",
+                      link: "/courses/python-data-structures-and-algorithms/lessons/06-recursion",
+                    },
+                    {
+                      text: "Sorting Algorithms",
+                      link: "/courses/python-data-structures-and-algorithms/lessons/07-sorting-algorithms",
+                    },
+                    {
+                      text: "Classes for Data Structures",
+                      link: "/courses/python-data-structures-and-algorithms/lessons/08-classes-for-data-structures",
+                    },
+                    {
+                      text: "Linked Lists",
+                      link: "/courses/python-data-structures-and-algorithms/lessons/09-linked-lists",
+                    },
+                    {
+                      text: "Heaps",
+                      link: "/courses/python-data-structures-and-algorithms/lessons/10-heaps",
+                    },
+                    {
+                      text: "Binary Search Trees",
+                      link: "/courses/python-data-structures-and-algorithms/lessons/11-binary-search-trees",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
           // "/courses/computer-and-operating-system-fundamentals/": [
           //   {
           //     text: "Computer and Operating System Fundamentals",
