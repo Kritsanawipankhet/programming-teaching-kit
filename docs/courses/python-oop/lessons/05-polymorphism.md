@@ -16,6 +16,7 @@ After completing this lesson, you will be able to:
 - Explain polymorphism.
 - Use the same method name in different classes.
 - Write functions that work with different object types.
+- Explain duck typing using an object's behavior.
 - Understand why polymorphism makes code flexible.
 - Avoid common polymorphism mistakes.
 
@@ -86,6 +87,59 @@ Meow
 The `play_sound` function does not need to know whether the object is a dog or a cat.
 
 It only needs the object to have a `make_sound` method.
+
+## Duck Typing: Think About Behavior
+
+A common way to explain **duck typing** is:
+
+> If it walks like a duck and quacks like a duck, treat it like a duck.
+
+Imagine a real duck and a toy duck. They are different things, but both can walk and quack. If an activity only needs those two actions, either one can take part.
+
+In Python, duck typing means using an object based on what it can do, rather than requiring it to belong to a particular class.
+
+```python
+class Duck:
+    def walk(self):
+        print("The duck waddles.")
+
+    def quack(self):
+        print("Quack!")
+
+
+class ToyDuck:
+    def walk(self):
+        print("The toy duck rolls forward.")
+
+    def quack(self):
+        print("The toy duck plays a quack sound.")
+
+
+def duck_parade(duck):
+    duck.walk()
+    duck.quack()
+
+
+duck_parade(Duck())
+duck_parade(ToyDuck())
+```
+
+Output
+
+```text
+The duck waddles.
+Quack!
+The toy duck rolls forward.
+The toy duck plays a quack sound.
+```
+
+`ToyDuck` does not inherit from `Duck`. The `duck_parade` function does not check the object's class. It simply calls `walk()` and `quack()`.
+
+This does not turn a toy duck into a real duck. It means the toy duck provides the behavior this function needs.
+
+The earlier `play_sound` example follows the same idea: any object can work as long as it provides a `make_sound()` method that can be called without extra arguments and performs the expected action.
+
+Duck typing is one way to achieve polymorphism in Python without inheritance. Matching method names alone is not enough: the methods must also accept the way they are called and provide suitable behavior. If an object has no required method, the call raises an `AttributeError`.
 
 ## Polymorphism with Inheritance
 
@@ -221,6 +275,7 @@ In this lesson, you learned:
 - Polymorphism means many forms.
 - Different classes can use the same method name.
 - The same function can work with different object types.
+- Duck typing focuses on the behavior an object provides, without requiring a shared parent class.
 - Polymorphism makes code more flexible and reusable.
 
 ## Exercises
